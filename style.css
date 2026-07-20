@@ -1,133 +1,153 @@
+/* Center the container */
 main {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
 }
 
+/* Background */
 body {
-background: #0b132b;
+  background: #0b132b;
+  font-family: sans-serif;
 }
 
+/* Login card */
+.container {
+  background: #1c2541;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  width: 350px;
+}
+
+/* Heading */
 .container h2 {
-color: white;
-font-weight: 500;
-text-align: center;
-font-size: 25px;
-font-family: sans-serif;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.email-password-div { 21 display: flex;
- background: #495057;
-margin-top: 5px;
-width: 290px; padding: 1px;
-border-radius: 4px;
- padding-right: 10px;
-}
-
-.email-password-div input {
- width: 90%;
- border: none;
-outline: none;
-padding: 10px;
-background: transparent;
-color: white;
-font-size: 14px;
-}
-
-.strong-div {
-
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#hide {
-display: none;
-}
-
-strong-div,
-strong {
-color: white;
- font-weight: 300;
-font-size: 14px;
-}
-
-:: placeholder {
- font-size: 14px;
-}
-
-.login {
- background: #0077b6;
-opacity: 0.6;
+/* Input wrapper */
+.email-password-div {
+  display: flex;
+  align-items: center;
+  background: #495057;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 10px;
   border-radius: 4px;
 }
 
-login button {
-font-size: 21px;
-display: flex;
+/* Input fields */
+.email-password-div input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+/* Show/Hide buttons */
+.strong-div {
+  display: flex;
   justify-content: center;
-border: none;
- background: none;
-color: cyan;
-padding: 7px;
+  align-items: center;
+}
+
+#hide {
+  display: none;
+}
+
+.strong-div button {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Placeholder */
+::placeholder {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Login button */
+.login {
+  background: #0077b6;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.login:hover {
+  opacity: 0.9;
+}
+
+.login button {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: cyan;
+  padding: 10px;
   width: 100%;
+  cursor: pointer;
 }
 
+/* Warning message */
 #warning {
-color: #f07167;
-font-weight: 300;
-font-size: 15px;
+  color: #f07167;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
 }
 
+/* Forgot password */
 .forgot {
-color: #00a8e8;
-font-weight: 500;
-text-align: center;
-font-family: sans-serif;
-margin-top: 28px;
+  color: #00a8e8;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
 }
 
+/* Social login links */
 .links {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 12px;
-background: #1c2541;
-margin-top: 5px;
-border-radius: 5px;
- }
-
-links img {
- width: 30px;
-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #1c2541;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.Links p {
-color: white;
- }
+.links:hover {
+  background: #3a506b;
+}
 
+.links img {
+  width: 30px;
+  height: 28px;
+}
+
+.links p {
+  color: white;
+  margin: 0;
+}
+
+/* GitHub logo styling */
 .github {
-border-radius: 99px;
-background: white;
- }
-
-@media (width<400px){
-links img{
-width: 20px;
-height: 20px;
-}
-
-Links p{
-font-size: 14px;
-}
-
-.container h2{
-font-size: 25px;
-}
-
-.email-passwd-div input{
-font-size: 13px;
- }
-
+  border-radius: 50%;
+  background: white;
 }
